@@ -11,7 +11,7 @@ if response.status_code == 200:
     # Convert the API response to a list of lists
     market_data = response.json()
     # Create a new CSV file
-    with open("market_data.csv", "w", newline="") as file:
+    with open("../market_data_sample.csv", "w", newline="") as file:
         writer = csv.writer(file)
         # Write the header row
         writer.writerow(["Open time", "Open", "High", "Low", "Close", "Volume", "Close time", "Quote asset volume", "Number of trades", "Taker buy base asset volume", "Taker buy quote asset volume", "Ignore"])
