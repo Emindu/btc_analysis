@@ -2,6 +2,8 @@ import requests
 import csv
 
 url = "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h"
+#https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1000 - endpoit for funding rate
+#https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=1d&startTime=1580836177000 - endpoit  for future data
 
 # Make the API request
 response = requests.get(url)
