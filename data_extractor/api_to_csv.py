@@ -25,7 +25,7 @@ for i in range(number_of_itr):
 print("completed")
 print(len(saved_data))
 
-with open("../market_data_eth_btc.csv", "w", newline="") as file:
+with open("../data/market_data_eth_btc.csv", "w", newline="") as file:
     writer = csv.writer(file)
     # Write the header row
     writer.writerow(
