@@ -6,9 +6,9 @@ ethbtc = "https://api.binance.com/api/v3/klines?symbol=ETHBTC&interval=1h"
 
 start_epoc_time = 1514772000000
 epoc_hour_epoc_time = 3600000000
-number_of_itr = 44
+number_of_itr = 45
 
-btc_url_start_url = "https://api.binance.com/api/v3/klines?symbol=ETHBTC&interval=1h&limit=1000&startTime="
+btc_url_start_url = "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=1000&startTime="
 saved_data = []
 
 for i in range(number_of_itr):
@@ -25,7 +25,7 @@ for i in range(number_of_itr):
 print("completed")
 print(len(saved_data))
 
-with open("../data/market_data_eth_btc.csv", "w", newline="") as file:
+with open("../data/market_data_btc_usdt_1h.csv", "w", newline="") as file:
     writer = csv.writer(file)
     # Write the header row
     writer.writerow(
